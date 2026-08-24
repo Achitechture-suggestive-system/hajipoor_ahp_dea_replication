@@ -1,0 +1,36 @@
+{
+  "architecture":"Component-based",
+  "inputs":{
+    "Cost":0.0269,
+    "Dev. Effort":0.0176
+  },
+  "outputs":{
+    "Security":0.1415,
+    "Performance":0.0692,
+    "Availability":0.0528,
+    "Modifiability":0.0917,
+    "Usability":0.0733
+  },
+  "theta_recomputed":0.752123669,
+  "phi_reciprocal":1.3295685818,
+  "radial_input_reduction_percent":24.7876330973,
+  "radial_input_target_theta_times_x":{
+    "Cost":0.0202321267,
+    "Dev. Effort":0.0132373766
+  },
+  "input_slacks":{
+    "Cost":0.0,
+    "Dev. Effort":0.0010759889
+  },
+  "output_slacks":{
+    "Security":0.0383779789,
+    "Performance":0.0272066365,
+    "Availability":0.0349831071,
+    "Modifiability":0.011892911,
+    "Usability":0.0
+  },
+  "active_lambdas":{
+    "Object oriented":1.1055806938
+  },
+  "paper_table5_theta":0.823
+}

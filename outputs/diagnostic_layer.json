@@ -1,0 +1,36 @@
+{
+  "architecture":"Layer",
+  "inputs":{
+    "Cost":0.0297,
+    "Dev. Effort":0.0331
+  },
+  "outputs":{
+    "Security":0.1402,
+    "Performance":0.0622,
+    "Availability":0.0173,
+    "Modifiability":0.0685,
+    "Usability":0.0497
+  },
+  "theta_recomputed":0.5309518045,
+  "phi_reciprocal":1.8834101167,
+  "radial_input_reduction_percent":46.9048195539,
+  "radial_input_target_theta_times_x":{
+    "Cost":0.0157692686,
+    "Dev. Effort":0.0175745047
+  },
+  "input_slacks":{
+    "Cost":0.0,
+    "Dev. Effort":0.0080957094
+  },
+  "output_slacks":{
+    "Security":0.0,
+    "Performance":0.0129409957,
+    "Availability":0.0511196681,
+    "Modifiability":0.012242102,
+    "Usability":0.0074312846
+  },
+  "active_lambdas":{
+    "Object oriented":0.8617086663
+  },
+  "paper_table5_theta":0.713
+}

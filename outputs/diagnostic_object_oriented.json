@@ -1,0 +1,36 @@
+{
+  "architecture":"Object oriented",
+  "inputs":{
+    "Cost":0.0183,
+    "Dev. Effort":0.011
+  },
+  "outputs":{
+    "Security":0.1627,
+    "Performance":0.0872,
+    "Availability":0.0794,
+    "Modifiability":0.0937,
+    "Usability":0.0663
+  },
+  "theta_recomputed":1.0,
+  "phi_reciprocal":1.0,
+  "radial_input_reduction_percent":0.0,
+  "radial_input_target_theta_times_x":{
+    "Cost":0.0183,
+    "Dev. Effort":0.011
+  },
+  "input_slacks":{
+    "Cost":0.0,
+    "Dev. Effort":0.0
+  },
+  "output_slacks":{
+    "Security":0.0,
+    "Performance":0.0,
+    "Availability":0.0,
+    "Modifiability":0.0,
+    "Usability":0.0
+  },
+  "active_lambdas":{
+    "Object oriented":1.0
+  },
+  "paper_table5_theta":0.894
+}

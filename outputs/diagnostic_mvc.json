@@ -1,0 +1,36 @@
+{
+  "architecture":"MVC",
+  "inputs":{
+    "Cost":0.0287,
+    "Dev. Effort":0.0212
+  },
+  "outputs":{
+    "Security":0.1161,
+    "Performance":0.0758,
+    "Availability":0.0751,
+    "Modifiability":0.0829,
+    "Usability":0.0676
+  },
+  "theta_recomputed":0.650133224,
+  "phi_reciprocal":1.5381462799,
+  "radial_input_reduction_percent":34.9866775979,
+  "radial_input_target_theta_times_x":{
+    "Cost":0.0186588235,
+    "Dev. Effort":0.0137828243
+  },
+  "input_slacks":{
+    "Cost":0.0,
+    "Dev. Effort":0.0025671381
+  },
+  "output_slacks":{
+    "Security":0.0497901961,
+    "Performance":0.0131098039,
+    "Availability":0.0058568627,
+    "Modifiability":0.0126372549,
+    "Usability":0.0
+  },
+  "active_lambdas":{
+    "Object oriented":1.0196078431
+  },
+  "paper_table5_theta":0.768
+}

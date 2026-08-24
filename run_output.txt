@@ -1,0 +1,114 @@
+================================================================================
+HAJIPOOR ET AL. (2025) — AHP -> DEA REPLICATION / AUDIT
+================================================================================
+
+[STAGE 1] Table 3: RIM(normal)
+               Security   Cost  Performance  Availability  Modifiability  Usability  Dev. Effort
+Security          0.342  0.260        0.380         0.422          0.251      0.458        0.194
+Cost              0.053  0.040        0.022         0.035          0.025      0.037        0.121
+Performance       0.077  0.157        0.069         0.069          0.141      0.058        0.136
+Dev. Effort       0.143  0.027        0.052         0.070          0.059      0.085        0.081
+Availability      0.106  0.150        0.162         0.130          0.192      0.110        0.152
+Modifiability     0.154  0.184        0.069         0.077          0.113      0.086        0.156
+Usability         0.124  0.183        0.248         0.197          0.219      0.167        0.159
+
+Column sums should be ~1 because the displayed values are rounded:
+Security         0.999
+Cost             1.001
+Performance      1.002
+Availability     1.000
+Modifiability    1.000
+Usability        1.001
+Dev. Effort      0.999
+
+AHP row-mean weight check:
+               Row mean from displayed Table 3  Published W(q_i)  difference_due_to_rounding
+Security                              0.329571             0.330                   -0.000429
+Cost                                  0.047571             0.047                    0.000571
+Performance                           0.101000             0.101                    0.000000
+Dev. Effort                           0.073857             0.074                   -0.000143
+Availability                          0.143143             0.143                    0.000143
+Modifiability                         0.119857             0.120                   -0.000143
+Usability                             0.185286             0.185                    0.000286
+
+[STAGE 2] Table 4 CM shape:
+(23, 7)
+Expected: (23, 7)
+
+[STAGE 3] Eq. (6) reconstruction check
+Max absolute CM reconstruction error: 1.3877787807814457e-17
+
+[STAGE 4] DEA matrices
+X inputs shape : (23, 2) ['Cost', 'Dev. Effort']
+Y outputs shape: (23, 5) ['Security', 'Performance', 'Availability', 'Modifiability', 'Usability']
+
+[STAGE 5/6] Eq. (9) recomputation vs paper Table 5
+                     theta_recomputed  paper_table5_theta  difference_recomputed_minus_paper  matches_paper_to_3dp    active_reference_peers
+Architecture                                                                                                                                
+Broker                       0.147328               0.444                          -0.296672                 False  Object oriented:0.637615
+SOA                          0.535181               0.530                           0.005181                 False  Object oriented:0.962156
+Pipe filter                  0.282158               0.341                          -0.058842                 False  Object oriented:0.641409
+Peer-to-peer                 0.239153               0.545                          -0.305847                 False  Object oriented:0.729219
+Implicit-invocation          0.159439               0.286                          -0.126561                 False  Object oriented:0.561086
+Space-based                  0.248830               0.512                          -0.263170                 False  Object oriented:0.634992
+Component-based              0.752124               0.823                          -0.070876                 False  Object oriented:1.105581
+Microservice                 1.000000               1.000                           0.000000                  True     Microservice:1.000000
+RPC                          0.140584               0.342                          -0.201416                 False  Object oriented:0.515475
+Microkernel                  0.168817               0.453                          -0.284183                 False  Object oriented:0.565491
+Client-server                0.343667               0.340                           0.003667                 False  Object oriented:1.119266
+Shared repository            0.376964               0.691                          -0.314036                 False  Object oriented:0.706549
+Reflection                   0.139375               0.159                          -0.019625                 False  Object oriented:0.384615
+PAC                          0.203628               0.258                          -0.054372                 False  Object oriented:0.657617
+Publish-subscribe            0.265279               0.519                          -0.253721                 False  Object oriented:0.585642
+Virtual-machine              0.146239               0.174                          -0.027761                 False  Object oriented:0.348416
+Batch-sequence               0.117758               0.098                           0.019758                 False  Object oriented:0.236802
+Blackboard                   0.132879               0.162                          -0.029121                 False  Object oriented:0.547492
+MVC                          0.650133               0.768                          -0.117867                 False  Object oriented:1.019608
+Object oriented              1.000000               0.894                           0.106000                 False  Object oriented:1.000000
+Grid computing               0.396258               0.400                          -0.003742                 False  Object oriented:0.677752
+Event-based                  0.392563               0.455                          -0.062437                 False  Object oriented:0.527708
+Layer                        0.530952               0.713                          -0.182048                 False  Object oriented:0.861709
+
+Exact/3dp matches: 1 of 23
+
+[STAGE 7] Key diagnostics
+
+--- Microservice ---
+paper theta      = 1.0
+recomputed theta = 1.0
+phi=1/theta      = 1.0
+active lambdas   = {'Microservice': 1.0}
+input slacks     = {'Cost': -0.0, 'Dev. Effort': 0.0}
+
+--- Component-based ---
+paper theta      = 0.823
+recomputed theta = 0.752124
+phi=1/theta      = 1.329569
+active lambdas   = {'Object oriented': 1.105580693815988}
+input slacks     = {'Cost': 0.0, 'Dev. Effort': 0.0010759889429034428}
+
+--- Object oriented ---
+paper theta      = 0.894
+recomputed theta = 1.0
+phi=1/theta      = 1.0
+active lambdas   = {'Object oriented': 1.0}
+input slacks     = {'Cost': 0.0, 'Dev. Effort': -0.0}
+
+--- MVC ---
+paper theta      = 0.768
+recomputed theta = 0.650133
+phi=1/theta      = 1.538146
+active lambdas   = {'Object oriented': 1.0196078431372548}
+input slacks     = {'Cost': 0.0, 'Dev. Effort': 0.0025671380747420928}
+
+--- Layer ---
+paper theta      = 0.713
+recomputed theta = 0.530952
+phi=1/theta      = 1.88341
+active lambdas   = {'Object oriented': 0.8617086662569144}
+input slacks     = {'Cost': 0.0, 'Dev. Effort': 0.008095709398844003}
+
+Outputs written to: /mnt/data/hajipoor_ahp_dea_replication/outputs
+
+NOTE:
+The raw expert pairwise matrices are not published, so this script does not invent them. It starts from the published aggregate Table 3 and Table 4. The independently solved Eq. (9) does not reproduce all Table 5 values; see 09_dea_eq9_vs_table5.csv.

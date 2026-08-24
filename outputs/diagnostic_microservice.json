@@ -1,0 +1,36 @@
+{
+  "architecture":"Microservice",
+  "inputs":{
+    "Cost":0.0215,
+    "Dev. Effort":0.0088
+  },
+  "outputs":{
+    "Security":0.1885,
+    "Performance":0.0935,
+    "Availability":0.0693,
+    "Modifiability":0.1082,
+    "Usability":0.0599
+  },
+  "theta_recomputed":1.0,
+  "phi_reciprocal":1.0,
+  "radial_input_reduction_percent":0.0,
+  "radial_input_target_theta_times_x":{
+    "Cost":0.0215,
+    "Dev. Effort":0.0088
+  },
+  "input_slacks":{
+    "Cost":0.0,
+    "Dev. Effort":0.0
+  },
+  "output_slacks":{
+    "Security":0.0,
+    "Performance":0.0,
+    "Availability":0.0,
+    "Modifiability":0.0,
+    "Usability":0.0
+  },
+  "active_lambdas":{
+    "Microservice":1.0
+  },
+  "paper_table5_theta":1.0
+}

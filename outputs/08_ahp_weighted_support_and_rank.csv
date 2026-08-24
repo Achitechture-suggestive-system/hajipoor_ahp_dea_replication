@@ -1,0 +1,24 @@
+,AHP weighted-support sum,AHP rank
+Broker,0.3636,8
+SOA,0.4474,6
+Pipe filter,0.2883,12
+Peer-to-peer,0.34330000000000005,9
+Implicit-invocation,0.2842,13
+Space-based,0.2838,15
+Component-based,0.47300000000000003,3
+Microservice,0.5497000000000001,1
+RPC,0.31229999999999997,11
+Microkernel,0.2701,17
+Client-server,0.45840000000000003,5
+Shared repository,0.2544,20
+Reflection,0.191,21
+PAC,0.28400000000000003,14
+Publish-subscribe,0.2705,16
+Virtual-machine,0.1816,22
+Batch-sequence,0.1585,23
+Blackboard,0.3198,10
+MVC,0.46740000000000004,4
+Object oriented,0.5186000000000001,2
+Grid computing,0.26980000000000004,18
+Event-based,0.25460000000000005,19
+Layer,0.40070000000000006,7
